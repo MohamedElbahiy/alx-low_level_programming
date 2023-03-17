@@ -21,7 +21,7 @@ int main(void)
 
 				for (n = 0; n < 10; n++)
 				{
-					if (i != 0 && j != 0 && k != 0)
+					if (i != 0 && j != 0 && k != 0 && n != 0)
 					{
 
 						putchar(i + '0');
