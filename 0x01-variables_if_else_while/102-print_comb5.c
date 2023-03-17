@@ -19,7 +19,7 @@ int main(void)
 			for (k = 0; k < 10; k++)
 			{
 
-				for (n = 1; n < 10; n++)
+				for (n = 0; n < 10; n++)
 				{
 
 					putchar(i + '0');
