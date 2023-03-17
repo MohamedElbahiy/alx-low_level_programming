@@ -29,7 +29,7 @@ int main(void)
 						putchar(k + '0');
 						putchar(n + '0');
 					}
-					else if (i != 9 && j != 8)
+					if (i != 9 && j != 8)
 					{
 						putchar(',');
 						putchar(' ');
