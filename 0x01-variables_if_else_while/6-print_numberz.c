@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- *main _ is my main function
+ * main - is my main function
  *
- * Return: return 0
+ * Return: return o
  */
 
 int main(void)
@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		putchar(i);
+		putchar(i + '0');
 	}
 	putchar('\n');
 	return (0);
