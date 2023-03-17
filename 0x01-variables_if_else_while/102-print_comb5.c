@@ -21,16 +21,20 @@ int main(void)
 
 				for (n = 0; n < 10; n++)
 				{
-
-					putchar(i + '0');
-					putchar(j + '0');
-					putchar(' ');
-					putchar(k + '0');
-					putchar(n + '0');
-					if (i != 9 && j != 8)
+					if (i != 0 && j != 0 && k != 0)
 					{
-						putchar(',');
+
+						putchar(i + '0');
+						putchar(j + '0');
 						putchar(' ');
+						putchar(k + '0');
+						putchar(n + '0');
+						if (i != 9 && j != 8)
+						{
+
+							putchar(',');
+							putchar(' ');
+						}
 					}
 				}
 			}
