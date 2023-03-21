@@ -6,24 +6,40 @@
  */
 int main(void)
 {
-	long double i = 0;
-	long double j = 1;
-	long double k;
-	int x;
+	int c;
+	unsigned long f1 = 0, f2 = 1, s;
+	unsigned long f1_h1, f1_h2, f2_h1, f2_h2;
+	unsigned long h1, h2;
 
-	for (x = 0; x < 98; x++)
+	for (c = 0; c < 92; c++)
 	{
-		k = i + j;
-		i = j;
-		j = k;
-		if (k == 1)
+		s = f1 + f2;
+		printf("%lu, ", s);
+		f1 = f2;
+		f2 = s;
+	}
+	f1_h1 = f1 / 10000000000;
+	f2_h1 = f2 / 10000000000;
+	f1_h2 = f1 / 10000000000;
+	f2_h2 = f2 / 10000000000;
+	for (c = 93; c < 99; c++)
+	{
+		h1 = f1_h1 + f2_h1;
+		h2 = f1_h2 + f2_h2;
+		if (h2 > 9999999999)
 		{
-			printf("%0.Lf", k);
+			h1 += 1;
+			h2 %= 10000000000;
 		}
-		else
+		printf("%lu%lu", h1, h2);
+		if (c != 98)
 		{
-			printf(", %0.Lf", k);
+			printf(", ");
 		}
+		f1_h1 = f2_h1;
+		f1_h2 = f2_h2;
+		f2_h1 = h1;
+		f2_h2 = h2;
 	}
 	printf("\n");
 	return (0);
