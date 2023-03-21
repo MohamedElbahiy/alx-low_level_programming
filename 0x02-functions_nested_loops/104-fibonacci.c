@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	long double i = 0;
-	long double j = 1;
-	long double k;
+	unsigned long i = 0;
+	unsigned long j = 1;
+	unsigned long k;
 	int x;
 
 	for (x = 0; x < 98; x++)
@@ -18,11 +18,11 @@ int main(void)
 		j = k;
 		if (k == 1)
 		{
-			printf("%0.Lf", k);
+			printf("%lu", k);
 		}
 		else
 		{
-			printf(", %0.Lf", k);
+			printf(", %lu", k);
 		}
 	}
 	printf("\n");
