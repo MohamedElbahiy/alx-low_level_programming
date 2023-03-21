@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	long long i = 0;
-	long long j = 1;
-	long long k;
+	long i = 0;
+	long j = 1;
+	long k;
 	int x;
 
 	for (x = 0; x < 50; x++)
@@ -18,11 +18,11 @@ int main(void)
 		j = k;
 		if (k == 1)
 		{
-			printf("%lld", k);
+			printf("%ld", k);
 		}
 		else
 		{
-			printf(", %lld", k);
+			printf(", %ld", k);
 		}
 	}
 	printf("\n");
