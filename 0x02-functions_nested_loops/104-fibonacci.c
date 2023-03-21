@@ -11,7 +11,7 @@ int main(void)
 	long double k = 0;
 	int x = 0;
 
-	while (x < 98)
+	for (x = 0; x < 98; x++)
 	{
 		k = i + j;
 		i = j;
@@ -22,9 +22,9 @@ int main(void)
 		}
 		else
 		{
-			printf(" ,%.Lf", k);
+			printf(", %.Lf", k);
 		}
 	}
 	printf("\n");
-	return (1);
+	return (0);
 }
