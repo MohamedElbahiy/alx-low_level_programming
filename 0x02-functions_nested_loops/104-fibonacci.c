@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	unsigned long i = 0;
-	unsigned long j = 1;
-	unsigned long k;
+	unsigned long long i = 0;
+	unsigned long long j = 1;
+	unsigned long long k;
 	int x;
 
 	for (x = 0; x < 98; x++)
@@ -18,11 +18,11 @@ int main(void)
 		j = k;
 		if (k == 1)
 		{
-			printf("%lu", k);
+			printf("%llu", k);
 		}
 		else
 		{
-			printf(", %lu", k);
+			printf(", %llu", k);
 		}
 	}
 	printf("\n");
