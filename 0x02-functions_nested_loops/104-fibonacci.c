@@ -20,16 +20,6 @@ int main(void)
 		{
 			printf("%0.Lf", k);
 		}
-		else if (x == 98 && x == 99)
-		{
-			k = k + 1;
-			printf(", %0.Lf", k);
-		}
-		else if (x == 100)
-		{
-			k = k + 2;
-			printf(", %0.Lf", k);
-		}
 		else
 		{
 			printf(", %0.Lf", k);
