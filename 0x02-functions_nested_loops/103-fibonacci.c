@@ -15,11 +15,7 @@ int main(void)
 		k = i + j;
 		i = j;
 		j = k;
-		if (k % 2 == 0)
-		{
-			printf("%ld", k);
-		}
 	}
-	printf("\n");
+	printf("%ld\n", k);
 	return (0);
 }
