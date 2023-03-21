@@ -8,20 +8,21 @@ int main(void)
 {
 	long double i = 0;
 	long double j = 1;
-	long double k;
-	int x;
-	for (x = 0; x < 98; x++)
+	long double k = 0;
+	int x = 0;
+
+	while (x < 98)
 	{
 		k = i + j;
 		i = j;
 		j = k;
 		if (k == 1)
 		{
-			printf("%0.1Lf", k);
+			printf("%.Lf", k);
 		}
 		else
 		{
-			printf(", %0.1Lf", k);
+			printf(" ,%.Lf", k);
 		}
 	}
 	printf("\n");
