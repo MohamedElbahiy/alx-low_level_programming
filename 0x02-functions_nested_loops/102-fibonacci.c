@@ -18,7 +18,7 @@ int main(void)
 		j = k;
 		if (k == 1)
 		{
-			printf("k");
+			printf("%d", k);
 		}
 		else
 		{
