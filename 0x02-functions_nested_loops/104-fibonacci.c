@@ -18,11 +18,11 @@ int main(void)
 		j = k;
 		if (k == 1)
 		{
-			printf("%f", k);
+			printf("%.f", k);
 		}
 		else
 		{
-			printf(", %f", k);
+			printf(", %.f", k);
 		}
 	}
 	printf("\n");
