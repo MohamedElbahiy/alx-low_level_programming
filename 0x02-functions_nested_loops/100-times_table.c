@@ -20,24 +20,22 @@ void print_times_table(int n)
 			for (j = 0; j <= n; j++)
 			{
 				k = i * j;
-				if (j != n)
+
+				if (j == 0)
 				{
-					if (k <= 9)
-					{
-						printf("%d,   ", k);
-					}
-					else if (k <= 99)
-					{
-						printf("%d,  ", k);
-					}
-					else
-					{
-						printf("%d, ", k);
-					}
+					printf("%d", k);
+				}
+				if (k <= 9)
+				{
+					printf(",   %d", k);
+				}
+				else if (k <= 99)
+				{
+					printf(",  %d", k);
 				}
 				else
 				{
-					printf("%d", k);
+					printf(", %d", k);
 				}
 			}
 			printf("\n");
