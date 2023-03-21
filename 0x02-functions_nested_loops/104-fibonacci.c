@@ -18,11 +18,11 @@ int main(void)
 		j = k;
 		if (k == 1)
 		{
-			printf("%Lf", k);
+			printf("%0.Lf", k);
 		}
 		else
 		{
-			printf(", %Lf", k);
+			printf(", %0.Lf", k);
 		}
 	}
 	printf("\n");
