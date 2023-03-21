@@ -18,21 +18,21 @@ int main(void)
 		j = k;
 		if (k == 1)
 		{
-			printf("%.Lf", k);
+			printf("%0.Lf", k);
 		}
 		else if (x == 95 && x == 96)
 		{
 			k = k + 1;
-			printf(", %.Lf", k);
+			printf(", %0.Lf", k);
 		}
-		else if (x == 96)
+		else if (x == 97)
 		{
 			k = k + 2;
-			printf(", %.Lf", k);
+			printf(", %0.Lf", k);
 		}
 		else
 		{
-			printf(", %.Lf", k);
+			printf(", %0.Lf", k);
 		}
 	}
 	printf("\n");
