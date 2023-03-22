@@ -1,20 +1,29 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+/* more headers goes there */
+
+/* betty style doc for function main goes there */
 /**
- * positive_or_negative - my main
+ * main - is my function
  *
- * @i: parameter
- *
- * Return: return nothing
+ * Return: return 0
  */
 
-void positive_or_negative(int i)
+int main(void)
 {
-	if (i < 0)
-	{
-		printf("%d is negative\n", i);
-	}
-	else
-	{
-		printf("%d is positive\n", i);
-	}
+	int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+if (n > 0)
+printf("%d is positive\n", n);
+else if (n < 0)
+printf("%d is negative\n", n);
+else
+printf("%d is zero\n", n);
+	/* your code goes there */
+	return (0);
+
+
 }
