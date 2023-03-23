@@ -15,5 +15,6 @@ void print_square(int size);
 int fizz_buzz(void);
 void print_triangle(int size);
 void largest_pr_f(long int n);
+void print_number(int n);
 
 #endif /* MAIN_H */
