@@ -4,7 +4,7 @@
  *
  * Return: return char
  *
- * @str: parameter
+ * @s: parameter
  */
 char *cap_string(char *s)
 {
