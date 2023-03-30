@@ -8,6 +8,7 @@
  */
 char *leet(char *s)
 {
+	char *ptr = s;
 	char x[] = {'A', 'E', 'O', 'T', 'L'};
 	int y[] = {4, 3, 0, 7, 1};
 	unsigned int i;
@@ -23,5 +24,5 @@ char *leet(char *s)
 		}
 		s++;
 	}
-	return (s);
+	return (ptr);
 }
